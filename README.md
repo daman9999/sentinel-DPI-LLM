@@ -8,15 +8,15 @@ A high-performance, multithreaded Deep Packet Inspection (DPI) engine in Python 
 
 ## ✨ Key Features
 
-- **🔍 Deep Packet Inspection (DPI):** Parses `.pcap` network captures to extract 5-Tuple flow identifiers (Source/Dest IP, Source/Dest Port, Protocol) and Server Name Indication (SNI) [1, 2].
-- **⚡ Multithreaded Processing:** Implements Load Balancer and Fast Path worker threads for parallel packet processing and connection grouping [3, 4].
-- **🤖 LLM-Driven Threat Intelligence:** Integrates with a local **Ollama LLM** (e.g., `phi3` / `llama3`) to analyze suspicious network logs and dynamically auto-generate JSON-formatted blocking rules.
-- **🔄 Live In-Memory Rule Engine:** Dynamically ingests LLM-generated rules on the fly to drop malicious packets or enforce rate-limiting without restarting the application [4, 5].
-- **🐳 Fully Containerized (Docker & Compose):** Features a microservice architecture (`dpi-engine` + `ollama`) with an automated entrypoint script to pull AI models on deployment.
+- ** Deep Packet Inspection (DPI):** Parses `.pcap` network captures to extract 5-Tuple flow identifiers (Source/Dest IP, Source/Dest Port, Protocol) and Server Name Indication (SNI) [1, 2].
+- **Multithreaded Processing:** Implements Load Balancer and Fast Path worker threads for parallel packet processing and connection grouping [3, 4].
+- ** LLM-Driven Threat Intelligence:** Integrates with a local **Ollama LLM** (e.g., `phi3` / `llama3`) to analyze suspicious network logs and dynamically auto-generate JSON-formatted blocking rules.
+- ** Live In-Memory Rule Engine:** Dynamically ingests LLM-generated rules on the fly to drop malicious packets or enforce rate-limiting without restarting the application [4, 5].
+- **Fully Containerized (Docker & Compose):** Features a microservice architecture (`dpi-engine` + `ollama`) with an automated entrypoint script to pull AI models on deployment.
 
 ---
 
-## 🏗️ Microservices Architecture
+##  Microservices Architecture
 
 ```text
 [ PCAP Traffic Input ]
