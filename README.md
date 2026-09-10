@@ -6,7 +6,7 @@ A high-performance, multithreaded Deep Packet Inspection (DPI) engine in Python 
 
 ---
 
-## ✨ Key Features
+##  Key Features
 
 - ** Deep Packet Inspection (DPI):** Parses `.pcap` network captures to extract 5-Tuple flow identifiers (Source/Dest IP, Source/Dest Port, Protocol) and Server Name Indication (SNI) [1, 2].
 - **Multithreaded Processing:** Implements Load Balancer and Fast Path worker threads for parallel packet processing and connection grouping [3, 4].
